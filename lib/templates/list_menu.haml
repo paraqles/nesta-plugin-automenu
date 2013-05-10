@@ -1,0 +1,5 @@
+%ul{ id: "menu", class: "menu" }
+- entries.each do |entry|
+  %li
+    %a{ href: entry.url }
+      = entry.title
