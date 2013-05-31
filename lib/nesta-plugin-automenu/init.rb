@@ -14,7 +14,7 @@ module Nesta
 
         if params.include? :template
           template = Nesta::Path.themes(
-                      Nesta::Config.yaml_conf["theme"], params[:template] )
+                      Nesta::Config.theme, params[:template] )
         else
           template = @std_options[:template]
         end
